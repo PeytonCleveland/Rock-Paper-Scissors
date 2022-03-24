@@ -1,0 +1,209 @@
+body {
+    margin:0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    margin-top: 0rem;
+    text-transform: uppercase;
+    color:white;
+    user-select: none;
+}
+
+h2 {
+    color:white;
+    font-size: 5.5rem;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    color:white;
+    user-select: none;
+    width: 100px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color:white;
+    user-select: none;
+}
+
+.game {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameOver {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    color:white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+}
+
+.rounds {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -65px;
+    left: 0px;
+    color:white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #1f1f1f;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    display:none;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 120px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.move {
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 120px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.25rem;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissors game for learning the basics of HTML, CSS, Javascript, and Git.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeytonCleveland/Rock-Paper-Scissors.git"
+  },
+  "author": "peyton.cleveland.1@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeytonCleveland/Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/PeytonCleveland/Rock-Paper-Scissors#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

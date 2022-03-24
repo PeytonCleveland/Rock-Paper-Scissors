@@ -1,0 +1,14 @@
+{
+  "name": "rps-api",
+  "version": "1.0.0",
+  "description": "Simple express Rest API for Rock, Paper, Scissors game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "peyton.cleveland.1@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

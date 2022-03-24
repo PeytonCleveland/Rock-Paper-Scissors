@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="game" class="game">
+            <div class="player">
+                <h4>Player 1</h2>
+                <h2 id="playerOneScore"></h2>
+            </div>
+            <div class="container">
+                <h4 class="rounds">Best of <span id="rounds"></span> wins!</h4>
+                <h1>Rock, Paper, Scissors</h1>
+                <div class="controls" id="move-controls">
+                    <h4 style="margin-bottom: 25px;">Please make a selection</h4>
+                    <div class="buttons">
+                        <button class="btn" id="rock">
+                            <span class="icon">👊🏼</span>
+                            Rock
+                        </button>
+                        <button class="btn" id="paper">
+                            <span class="icon">✋🏼</span>
+                            Paper
+                        </button>
+                        <button class="btn" id="scissors">
+                            <span class="icon">✌🏼</span>
+                            Scissors
+                        </button>
+                    </div>
+                </div>
+                <div class="controls" id="result">
+                    <h4 style="margin-bottom: 25px;">Result:</h4>
+                    <div class="buttons">
+                        <div class="move">
+                            <span class="icon" id="player-move-icon"></span>
+                            <span id="player-move-text">Rock</span>
+                        </div>
+                        <h3 id="result-text">Beats</h3>
+                        <div class="move">
+                            <span class="icon" id="cpu-move-icon"></span>
+                            <span id="cpu-move-text">Rock</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="back" id="back">
+                    ← Main Menu
+                </button>
+            </div>
+            <div class="player">
+                <h4>Player 2</h2>
+                <h2 id="playerTwoScore"></h2>
+            </div>
+        </div>
+        <div id="menu" class="menu">
+            <div class="container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h4 style="margin-bottom: 25px;">Main Menu</h4>
+                <div class="options">
+                    <button class="btn" id="start">
+                        <span class="icon">🤘🏼</span>
+                        Start
+                    </button>
+                    <button class="btn" id="rules">
+                        <span class="icon">📖</span>
+                        Rules
+                    </button>
+                    <button class="btn" id="settings">
+                        <span class="icon">⚙️</span>
+                        Settings
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="settingsScreen" class="settings">
+            <div class="container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h4 style="margin-bottom: 25px;">Play to best of:</h4>
+                <div class="buttons">
+                    <button class="btn" id="5">
+                        <span class="icon">🖐🏼</span>
+                        Five
+                    </button>
+                    <button class="btn" id="7" >
+                        <span class="icon">🎰</span>
+                        Seven
+                    </button>
+                    <button class="btn" id="9">
+                        <span class="icon">9️⃣</span>
+                        Nine
+                    </button>
+                </div>
+                <button class="back" id="back">
+                    ← Back
+                </button>
+            </div>
+        </div>
+        <div id="gameOverScreen" class="gameOver">
+            <div class="container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h4 style="margin-bottom: 25px;" id="final-result"></h4>
+                <div class="buttons">
+                    <button class="btn" id="restart">
+                        <span class="icon">🍻</span>
+                        New Game
+                    </button>
+                    <button class="btn" id="main">
+                        <span class="icon">🪦</span>
+                        Main Menu
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
