@@ -12,7 +12,7 @@
     <body>
         <div id="game" class="game">
             <div class="player">
-                <h4>Player 1</h2>
+                <h4 id="playerOneName"></h2>
                 <h2 id="playerOneScore"></h2>
             </div>
             <div class="container">
@@ -54,8 +54,44 @@
                 </button>
             </div>
             <div class="player">
-                <h4>Player 2</h2>
+                <h4 id="playerTwoName"></h2>
                 <h2 id="playerTwoScore"></h2>
+            </div>
+        </div>
+        <div id="info" class="info">
+            <div class="container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h4 style="margin-bottom: 25px;">Please enter your name:</h4>
+                <div class="options">
+                    <input type="text" class="nameInput" id="playerOneNameInput" placeholder="Your name">
+                    <button class="btn" id="info-button">
+                        <span class="icon">🔥</span>
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="leaderboard" class="leaderboard">
+            <div class="container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h4 style="margin-bottom: 25px;">leaderboard</h4>
+                <table id="table">
+                </table>
+                <button class="back" id="leaderboard-back">
+                    ← Back
+                </button>
+            </div>
+        </div>
+        <div id="loading" class="info">
+            <div class="container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h4 style="margin-bottom: 25px;" id="loading-message">Finding an opponent...</h4>
+                <div class="options">
+                    <button class="move" id="searching">
+                        <span class="icon">🔎</span>
+                        Searching
+                    </button>
+                </div>
             </div>
         </div>
         <div id="menu" class="menu">
@@ -67,9 +103,9 @@
                         <span class="icon">🤘🏼</span>
                         Start
                     </button>
-                    <button class="btn" id="rules">
-                        <span class="icon">📖</span>
-                        Rules
+                    <button class="btn" id="leaderboard-button">
+                        <span class="icon">🏆</span>
+                        Leaderboard
                     </button>
                     <button class="btn" id="settings">
                         <span class="icon">⚙️</span>
