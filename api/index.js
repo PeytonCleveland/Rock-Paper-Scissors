@@ -20,9 +20,8 @@ app.get("/api/user", (req, res) => {
   res.json(users[Math.floor(Math.random() * users.length)]);
 });
 
-// get all results, caches data for 2 minutes
+// get all results
 app.get("/api/results", (req, res) => {
-  res.set("Cache-Control", "public, max-age=120");
   res.json(results);
 });
 
