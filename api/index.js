@@ -16,18 +16,18 @@ app.listen(3000, () => {
 });
 
 // get a random user
-app.get("/user", (req, res) => {
+app.get("/api/user", (req, res) => {
   res.json(users[Math.floor(Math.random() * users.length)]);
 });
 
 // get all results, caches data for 2 minutes
-app.get("/results", (req, res) => {
+app.get("/api/results", (req, res) => {
   res.set("Cache-Control", "public, max-age=120");
   res.json(results);
 });
 
 // update results
-app.post("/results", jsonParser, (req, res) => {
+app.post("/api/results", jsonParser, (req, res) => {
   const { winner, loser } = req.body;
 
   winnerIndex = results.findIndex((result) => result.name === winner);
