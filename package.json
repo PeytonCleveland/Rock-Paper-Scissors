@@ -4,7 +4,7 @@
   "description": "Rock, Paper, Scissors game for learning the basics of HTML, CSS, Javascript, and Git.",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --config jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/PeytonCleveland/Rock-Paper-Scissors#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "babel-polyfill": "^6.26.0",
     "jest": "^27.5.1"
   }
 }
